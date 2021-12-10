@@ -1,21 +1,23 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Header } from '@female-daily/shared/ui';
 import './styles.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { DataProvider } from '../contexts/DataContext';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to web!</title>
+        <title>!Female Daily</title>
       </Head>
       <div className="app">
-        <header className="flex">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/nx-logo-white.svg" alt="Nx logo" width="75" height="50" />
-          <h1>Welcome to web!</h1>
-        </header>
+        <Header />
         <main>
-          <Component {...pageProps} />
+          <DataProvider>
+            <Component {...pageProps} />
+          </DataProvider>
         </main>
       </div>
     </>

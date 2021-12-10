@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@female-daily/shared/assets": ["libs/shared/assets/src/index.ts"],
+      "@female-daily/shared/types": ["libs/shared/types/src/index.ts"],
+      "@female-daily/shared/ui": ["libs/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
