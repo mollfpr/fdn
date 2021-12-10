@@ -6,6 +6,8 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Smart, Extensible Build Framework**
 
+[Demo](https://fdn-peach.vercel.app/)
+
 ## Development Server
 
 1. To serve the web apps
